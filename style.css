@@ -8,6 +8,8 @@
     --Yellow: #fff900;
     --Orange: #ff6c00;
     --DarkGrey: #262626;
+    --GlitchBlue:#00b3ff;
+    --Whiteish: rgb(190, 221, 231);
 
 }
 body{
@@ -48,7 +50,8 @@ body{
 }
 
 .ltr-6{
-    animation: lighting 2s 1s infinite;
+    animation: lighting 2s 1s infinite; 
+    /* animation: glitch 1s 0.5s infinite; */
 }
 
 .ltr-7{
@@ -60,14 +63,116 @@ body{
 }
 
 @keyframes lighting{
-    from{
+    1%{
         color: var(--Yellow);
-        text-shadow: 4px 4px 40px var(--Orange);
-
+        text-shadow: 
+        2px 2px 10px var(--Orange),
+        2px 2px 20px var(--Orange),
+        2px 2px 30px var(--Orange),
+        2px 2px 40px var(--Orange),
+        2px 2px 50px var(--Orange),
+        2px 2px 60px var(--Orange),
+        2px 2px 70px var(--Orange),
+        2px 2px 80px var(--Orange);
     }
-    to{
+    
+   
+    90%{
         color: var(--Grey);
-        text-shadow: 0px 0px 0px var(--Grey);
-
+        text-shadow: 0px 0px 0px var(--Grey); 
     }
+    95%{
+        color: var(--DarkGrey);
+        text-shadow: 0px 0px 0px var(--DarkGrey);
+    } 
+
+}
+
+.letterG{
+    padding: .5rem;
+
+}
+.ltr-G1{
+    animation: glitchsmooth 2s infinite;
+}
+
+.ltr-G2{
+    animation: glitchsmooth 2s 0.2s infinite;
+}
+
+.ltr-G3{
+    animation: glitch 1s 0.5s infinite;
+}
+
+.ltr-G4{
+    animation: glitchsmooth 2s 0.6s infinite;
+}
+
+.ltr-G5{
+    animation: glitchsmooth 2s 0.8s infinite;
+}
+
+.ltr-G6{
+    animation: glitchsmooth 2s 0.8s infinite;
+    
+}
+
+.ltr-G7{
+    animation: glitchsmooth 2s 1.2s infinite;
+}
+
+.ltr-G8{
+    animation: glitchsmooth 2s 1.4s infinite;
+}
+
+
+@keyframes glitchsmooth{
+    1%{
+        color: var(--Whiteish);
+        text-shadow: 
+        2px 2px 10px var(--GlitchBlue),
+        2px 2px 20px var(--GlitchBlue),
+        2px 2px 30px var(--GlitchBlue),
+        2px 2px 40px var(--GlitchBlue),
+        2px 2px 50px var(--GlitchBlue),
+        2px 2px 60px var(--GlitchBlue),
+        2px 2px 70px var(--GlitchBlue),
+        2px 2px 80px var(--GlitchBlue);
+    }
+    
+   
+    90%{
+        color: var(--Grey);
+        text-shadow: 0px 0px 0px var(--Grey); 
+    }
+    95%{
+        color: var(--DarkGrey);
+        text-shadow: 0px 0px 0px var(--DarkGrey);
+    } 
+
+}
+
+@keyframes glitch{
+    1%,10%,19%,40%,31%,55%{
+        color: var(--Whiteish);
+        text-shadow: 
+        2px 2px 10px var(--GlitchBlue),
+        2px 2px 20px var(--GlitchBlue),
+        2px 2px 30px var(--GlitchBlue),
+        2px 2px 40px var(--GlitchBlue),
+        2px 2px 50px var(--GlitchBlue),
+        2px 2px 60px var(--GlitchBlue),
+        2px 2px 70px var(--GlitchBlue),
+        2px 2px 80px var(--GlitchBlue);
+    }
+    
+   
+    13%, 25%,50%{
+        color: var(--Grey);
+        text-shadow: 0px 0px 0px var(--Grey); 
+    }
+    16%,31%,52%,70%{
+        color: var(--DarkGrey);
+        text-shadow: 0px 0px 0px var(--DarkGrey);
+    } 
 }
