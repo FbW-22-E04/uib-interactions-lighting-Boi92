@@ -9,15 +9,13 @@
     --Orange: #ff6c00;
     --DarkGrey: #262626;
     --GlitchBlue:#00b3ff;
-    --Whiteish: rgb(190, 221, 231);
-    --Poison: rgb(73, 240, 32);
-    --DarkGreen:rgb(41, 112, 23);
-    --DangerRed:red;
-    --DeepRed:rgb(156, 22, 22);
-}
-@font-face {
-    font-family: Light;
-    src: url(/fonts/varino-normal-font/VarinonormalRegular-1GXaM.ttf);
+    --Whiteish: #bedde7;
+    --Poison: #49f020;
+    --DarkGreen:#297017;
+    --DangerRed:#ff0000;
+    --DeepRed:#9c1616;
+    --Nred:#e45e5e;
+    --Norange:#ac4903;
 }
 
 body{
@@ -29,9 +27,20 @@ body{
     
 }
 .container {
-    margin: 15rem auto;
+    /* margin: 20rem auto; */
+    margin-top: 30rem;
+    margin-bottom: 30rem;
     display: flex;
     justify-content: center;
+}
+
+
+        /* LIGHTING */
+
+
+@font-face {
+    font-family: Light;
+    src: url(/fonts/varino-normal-font/VarinonormalRegular-1GXaM.ttf);
 }
 .letter{
     padding: .5rem;
@@ -96,9 +105,15 @@ body{
     }  */
 
 }
+
+
+        /* GLITCH */
+
+
 @font-face {
     font-family: Cyber;
     src: url(/fonts/Cyberpunk/Cyberpunk.ttf);   
+    /* src:url(/fonts/data_twenty/DataTwenty.ttf) */
 }
 
 .letterG{
@@ -154,14 +169,14 @@ body{
         2px 2px 80px var(--GlitchBlue);
     }
     
-    75%{
+    85%{
         color: var(--DarkGrey);
         text-shadow: 
         2px 2px 10px var(--DarkGrey),
         2px 2px 20px var(--DarkGrey),
         2px 2px 30px var(--DarkGrey),;
     }
-     76%{
+     86%{
         color: var(--DarkGrey);
         text-shadow: 0px 0px 0px var(--DarkGrey); 
     }  
@@ -186,9 +201,14 @@ body{
    
     16%,31%,52%,70%{
         color: var(--DarkGrey);
-        text-shadow: 0px 0px 0px var(--DarkGrey);
+        /* text-shadow: 0px 0px 0px var(--DarkGrey); */
+        text-shadow: 0px 0px 0px var(--Whiteish);
     } 
 }
+
+
+        /* DANGER / Police Siren Colors */
+
 
 @font-face {
     font-family: Police;
@@ -308,3 +328,75 @@ body{
 
 } */
 
+
+            /* GROSSPERSKY */
+
+
+@font-face {
+    font-family: Light;
+    src: url(/fonts/varino-normal-font/VarinonormalRegular-1GXaM.ttf);
+}
+.letterN{
+    padding: .5rem;
+    font-family: Light;
+    color: var(--DarkGrey);
+    text-shadow: 2px 4px 6px var(--Orange); 
+
+}
+.ltrN-1{
+    animation: gross 10s ease-out;
+}
+
+.ltrN-2{
+    animation: gross 10s  ease-out;
+}
+
+.ltrN-3{
+    animation: gross 10s ease-out;
+}
+
+.ltrN-4{
+    animation: gross 10s  ease-out;
+}
+
+.ltrN-5{
+    animation: gross 10s ease-out;
+}
+
+.ltrN-6{
+    animation: gross 10s  ease-out; 
+}
+
+.ltrN-7{
+    animation: gross 10s ease-out;
+}
+
+.ltrN-8{
+    animation: gross 10s  ease-out;
+}
+.ltrN-9{
+    animation: gross 10s ease-out;
+}
+.ltrN-10{
+    animation: gross 10s  ease-out;
+}
+.ltrN-11{
+    animation: gross 10s ease-out;
+}
+
+
+@keyframes gross{
+    from{
+        color: var(--Norange);
+        text-shadow: 2px 4px 6px var(--Orange); 
+   
+    }
+    
+    to{
+        color: var(--DarkGrey);
+        text-shadow: 2px 4px 6px var(--Orange)
+        ; 
+    }
+
+
+}
