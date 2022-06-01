@@ -10,6 +10,10 @@
     --DarkGrey: #262626;
     --GlitchBlue:#00b3ff;
     --Whiteish: rgb(190, 221, 231);
+    --Poison: rgb(73, 240, 32);
+    --DarkGreen:rgb(41, 112, 23);
+    --DangerRed:red;
+    --DeepRed:rgb(156, 22, 22);
 
 }
 body{
@@ -66,14 +70,14 @@ body{
     1%{
         color: var(--Yellow);
         text-shadow: 
-        2px 2px 10px var(--Orange),
-        2px 2px 20px var(--Orange),
-        2px 2px 30px var(--Orange),
+        1px 1px 20px var(--Orange),
         2px 2px 40px var(--Orange),
-        2px 2px 50px var(--Orange),
-        2px 2px 60px var(--Orange),
-        2px 2px 70px var(--Orange),
-        2px 2px 80px var(--Orange);
+        3px 3px 60px var(--Orange),
+        4px 4px 80px var(--Orange),
+        5px 5px 100px var(--Orange),
+        6px 6px 120px var(--Orange),
+        7px 7px 140px var(--Orange),
+        8px 8px 160px var(--Orange);
     }
     
    
@@ -81,10 +85,10 @@ body{
         color: var(--Grey);
         text-shadow: 0px 0px 0px var(--Grey); 
     }
-    95%{
+/*     95%{
         color: var(--DarkGrey);
         text-shadow: 0px 0px 0px var(--DarkGrey);
-    } 
+    }  */
 
 }
 
@@ -93,11 +97,11 @@ body{
 
 }
 .ltr-G1{
-    animation: glitchsmooth 2s infinite;
+    animation: glitchsmooth 3s infinite;
 }
 
 .ltr-G2{
-    animation: glitchsmooth 2s 0.2s infinite;
+    animation: glitchsmooth 3s 0.2s infinite;
 }
 
 .ltr-G3{
@@ -105,24 +109,24 @@ body{
 }
 
 .ltr-G4{
-    animation: glitchsmooth 2s 0.6s infinite;
+    animation: glitchsmooth 3s 0.6s infinite;
 }
 
 .ltr-G5{
-    animation: glitchsmooth 2s 0.8s infinite;
+    animation: glitchsmooth 3s 0.8s infinite;
 }
 
 .ltr-G6{
-    animation: glitchsmooth 2s 0.8s infinite;
+    animation: glitchsmooth 3s 0.8s infinite;
     
 }
 
 .ltr-G7{
-    animation: glitchsmooth 2s 1.2s infinite;
+    animation: glitchsmooth 3s 1.2s infinite;
 }
 
 .ltr-G8{
-    animation: glitchsmooth 2s 1.4s infinite;
+    animation: glitchsmooth 3s 1.4s infinite;
 }
 
 
@@ -140,15 +144,14 @@ body{
         2px 2px 80px var(--GlitchBlue);
     }
     
-   
-    90%{
-        color: var(--Grey);
-        text-shadow: 0px 0px 0px var(--Grey); 
-    }
-    95%{
+    80%{
         color: var(--DarkGrey);
         text-shadow: 0px 0px 0px var(--DarkGrey);
-    } 
+    }
+ /*    99%{
+        color: var(--Grey);
+        text-shadow: 0px 0px 0px var(--Grey); 
+    }  */
 
 }
 
@@ -176,3 +179,117 @@ body{
         text-shadow: 0px 0px 0px var(--DarkGrey);
     } 
 }
+
+
+.letterP{
+    padding: .5rem;
+    color: var(--DarkGrey);
+
+}
+.ltr-P1{
+    animation: pulse 1s 0.66s infinite;
+}
+
+.ltr-P2{
+    animation:pulse  1s 0.33s infinite;
+}
+
+.ltr-P3{
+    animation: pulse  1s  infinite;
+}
+
+.ltr-P4{
+    animation: pulse 1s  infinite;
+}
+
+.ltr-P5{
+    animation: pulse 1s .33s infinite;
+}
+
+.ltr-P6{
+    animation:pulse 1s .66s infinite; 
+}
+
+
+
+@keyframes pulse{
+    0%{
+        color: var(--DeepRed);
+        text-shadow: 
+        0px 0px 10px var(--DangerRed),
+        0px 0px 20px var(--DangerRed),
+        0px 0px 30px var(--DangerRed),
+        0px 0px 40px var(--DangerRed),
+        0px 0px 50px var(--DangerRed),
+        0px 0px 60px var(--DangerRed),
+        0px 0px 70px var(--DangerRed),
+        0px 0px 80px var(--DangerRed);
+    }
+    25%{
+        color: var(--Whiteish);
+        text-shadow: 
+        0px 0px 10px var(--GlitchBlue),
+        0px 0px 20px var(--GlitchBlue),
+        0px 0px 30px var(--GlitchBlue),
+        0px 0px 40px var(--GlitchBlue),
+        0px 0px 50px var(--GlitchBlue),
+        0px 0px 60px var(--GlitchBlue),
+        0px 0px 70px var(--GlitchBlue),
+        0px 0px 80px var(--GlitchBlue);
+    }
+    50%{
+        color: var(--Whiteish);
+        text-shadow: 
+        0px 0px 10px var(--DangerRed),
+        0px 0px 20px var(--DangerRed),
+        0px 0px 30px var(--DangerRed),
+        0px 0px 40px var(--DangerRed),
+        0px 0px 50px var(--DangerRed),
+        0px 0px 60px var(--DangerRed),
+        0px 0px 70px var(--DangerRed),
+        0px 0px 80px var(--DangerRed);
+    }
+    75%{
+        color: var(--Whiteish);
+        text-shadow: 
+        0px 0px 10px var(--GlitchBlue),
+        0px 0px 20px var(--GlitchBlue),
+        0px 0px 30px var(--GlitchBlue),
+        0px 0px 40px var(--GlitchBlue),
+        0px 0px 50px var(--GlitchBlue),
+        0px 0px 60px var(--GlitchBlue),
+        0px 0px 70px var(--GlitchBlue),
+        0px 0px 80px var(--GlitchBlue);
+    }
+    
+}
+/* @keyframes nopulse{
+    0%{
+        color: var(--DeepRed);
+        text-shadow: 
+        0px 0px 10px var(--DangerRed),
+        0px 0px 20px var(--DangerRed),
+        0px 0px 30px var(--DangerRed),
+        0px 0px 40px var(--DangerRed),
+        0px 0px 50px var(--DangerRed),
+        0px 0px 60px var(--DangerRed),
+        0px 0px 70px var(--DangerRed),
+        0px 0px 80px var(--DangerRed);
+        
+    }
+    99%{
+        color: var(--DarkGrey);
+        text-shadow: 
+        0px 0px 10px var(--DangerRed),
+        0px 0px 20px var(--DangerRed),
+        0px 0px 30px var(--DangerRed),
+        0px 0px 40px var(--DangerRed),
+        0px 0px 50px var(--DangerRed),
+        0px 0px 60px var(--DangerRed),
+        0px 0px 70px var(--DangerRed),
+        0px 0px 80px var(--DangerRed);
+    }
+   
+
+} */
+
